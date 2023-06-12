@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section id="containermain">
+    <form onsubmit="wetterCheck(); return false">
+      <div id="container-row">
+      <input type="text" id="city" />
+      <button type="submit">></button>
+    </div>
+    </form>
+      <article class="output">
+        <div id="left-list"></div>
+        <div id="right-detail">
+
+          <div id="detail-container">
+          <div id="detail-img">
+            <!-- <img id="wolkegrau" src="./assets/img/Wolke grau.png" alt="">
+            <img id="wolkeweiss" src="./assets/img/Wolke weiß.png" alt=""> -->
+          </div>
+          <div id="details-wrap-container">
+            <div class="more-temps-infos">
+                <div><img src="./assets/img/Rain.png" alt="">
+                <p>Rain probability</p>
+                <p id="rain-prob">0%</p>
+                </div>
+
+                <div><img src="./assets/img/Humidity_1.png" alt="">
+                  <p>Humidity</p>
+                  <p id="humidity">68%</p>
+                  </div>
+
+                  <div><img src="./assets/img/Pressure.png" alt="">
+                    <p>Pressure</p>
+                    <p id="pressure">1023 hPa</p>
+                    </div>
+            </div>
+            <div>
+              <h5 id="name"></div></h5>
+              <h1 id="temperature"><div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></h1>
+            </div>
+
+        </div>
+
+        </div>
+
+      </article>
+    </section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
